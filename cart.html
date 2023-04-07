@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, real estate and land in port harcourt"
+    />
+    <title>Chow Chow</title>
+
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- IonIcon -->
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+  <link rel="stylesheet" href="cart.css">
+  </head>
+  <body>
+    
+    <div class="container w-[1000px] m-auto duration-500">
+        <header class="grid  mt-10">
+            <h1 class="chow">Chow Delight</h1>
+            <div class="cart relative text-right">
+                <img class="w-30 " src="images/cart-svgrepo-com.svg" alt="">
+                <span class="quantity bg-red-500 top-[-5px] left-[80%] rounded-md flex justify-center align-center text-white absolute px-2 py-2">0</span>
+            
+
+            </div>
+        </header>
+        <div class="list">
+        </div>
+    </div>
+    
+    <!-- Nav Cart Slides In-->
+    
+    <div class="card fixed top-0 h-[100vh] w-[500px] left-[100%] duration-200 bg-slate-200">
+        
+        <h1 class="chow text-black font-bold m-0 py-10 px-5 h-[80px] flex align-center">Your Shopping Cart</h1>
+        <!-- "listCard" for items added to cart -->
+        <ul class="listCard"></ul>
+        <div class="checkOut absolute bottom-0 w-[100%] grid grid-col-2">
+
+            <style>
+                .active .card{
+                    left: calc(100% - 500px);
+                }
+               
+            </style>
+            <div class="total bg-black text-white"></div>
+            <div class="closeCart text-center py-5 bg-red-400 text-white pointer">Close</div>
+        </div>
+    </div>
+
+   
+    <script src="cart.js"></script>
+ 
+    <!-- Ion Icon -->
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+
+  </body>
+</html>
